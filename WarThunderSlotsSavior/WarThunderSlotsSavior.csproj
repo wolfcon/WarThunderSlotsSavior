@@ -1,0 +1,29 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>WarThunderSlotsSavior.AppDelegate</StartupObject>
+    <ApplicationIcon>Logo\icon.ico</ApplicationIcon>
+    <Authors>Frank (conMan)</Authors>
+    <Description>Contact me: 
+QQ: 472730949
+github: https://github.com/wolfcon</Description>
+    <PackageProjectUrl>https://github.com/wolfcon/WarThunderSlotsSavior</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SignAssembly>false</SignAssembly>
+    <Copyright>https://github.com/wolfcon</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Logo\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Logo\icon.ico" />
+  </ItemGroup>
+
+</Project>
