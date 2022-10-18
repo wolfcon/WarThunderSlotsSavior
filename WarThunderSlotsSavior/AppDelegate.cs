@@ -29,7 +29,7 @@ namespace WarThunderSlotsSavior {
                 }
                 MessageBox.Show(argsString);
             }*/
-            WarThunderSlotsSavior app = new WarThunderSlotsSavior.App();
+            App app = new WarThunderSlotsSavior.App();
             app.InitializeComponent();
 
             MainWindow mainWindow = new MainWindow();
