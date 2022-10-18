@@ -29,37 +29,12 @@ namespace WarThunderSlotsSavior {
         }
 
         public void refreshBackupStatus() {
-            var dateString = lastBackupDateString();
-            var hasBackup = dateString != null;
+            string dateString = WTSetting.lastBackupDateString();
+            bool hasBackup = dateString != null;
             restoreButton.IsEnabled = hasBackup;
-            lastBackupDateLabel.Content = hasBackup ? "Last: " + lastBackupDateString() : "No backup";
-        }
-        static string lastBackupDateString() {
-            string dateString = null;
-            var dirInfo = new DirectoryInfo(AppConfig.backupPath);
-            if (dirInfo.Exists) {
-                dateString = dirInfo.CreationTime.ToString();
-            }
-            
-            return dateString;
-        }
-        static void backupSettings() {
-            var result = FileUtility.CopyFolder(AppConfig.savingPath, AppConfig.backupPath);
-            if (result) {
-                MessageBox.Show("🎉Your slot preset has been backed up!🎉");
-            }
+            lastBackupDateLabel.Content = hasBackup ? "Last: " + dateString : "No backup";
         }
 
-        static void restoreSettings() {
-            if (!Directory.Exists(AppConfig.backupPath)) {
-                MessageBox.Show("🎃You have no backup at all!!!🎃");
-                return;
-            }
-            var result = FileUtility.CopyFolder(AppConfig.backupPath, AppConfig.savingPath);
-            if (result) {
-                MessageBox.Show("🎉Your slot preset has been RESTORED!🎉");
-            }
-        }
 
         protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e) {
             base.OnMouseLeftButtonDown(e);
@@ -69,12 +44,12 @@ namespace WarThunderSlotsSavior {
         }
 
         private void backupButton_Click(object sender, RoutedEventArgs e) {
-            backupSettings();
+            WTSetting.backup();
             refreshBackupStatus();
         }
 
         private void restoreButton_Click(object sender, RoutedEventArgs e) {
-            restoreSettings();
+            WTSetting.restore();
         }
 
         private void infoButton_Click(object sender, RoutedEventArgs e) {

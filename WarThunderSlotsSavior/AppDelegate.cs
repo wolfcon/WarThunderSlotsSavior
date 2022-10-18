@@ -22,17 +22,17 @@ namespace WarThunderSlotsSavior {
             /*if (args.Length > 0)
             {
                 globalArgs = args;
-                var argsString = "";
+                string argsString = "";
                 foreach (var item in args)
                 {
                     argsString += "+ " + item;
                 }
                 MessageBox.Show(argsString);
             }*/
-            var app = new WarThunderSlotsSavior.App();
+            WarThunderSlotsSavior app = new WarThunderSlotsSavior.App();
             app.InitializeComponent();
 
-            var mainWindow = new MainWindow();
+            MainWindow mainWindow = new MainWindow();
             app.MainWindow = mainWindow;
             app.Run();
             App.Main();

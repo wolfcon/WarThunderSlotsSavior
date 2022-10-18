@@ -20,7 +20,7 @@ namespace WarThunderSlotsSavior {
                 if (!Directory.Exists(destFolder)) {
                     Directory.CreateDirectory(destFolder);
                 } else {
-                    var dirInfo = new DirectoryInfo(destFolder);
+                    DirectoryInfo dirInfo = new DirectoryInfo(destFolder);
                     try {
                         dirInfo.Delete(true);
                         Directory.CreateDirectory(destFolder);
@@ -32,16 +32,16 @@ namespace WarThunderSlotsSavior {
                 //得到原文件根目录下的所有文件
                 string[] files = Directory.GetFiles(sourceFolder);
                 foreach (string file in files) {
-                    var name = Path.GetFileName(file);
-                    var dest = Path.Combine(destFolder, name);
+                    string name = Path.GetFileName(file);
+                    string dest = Path.Combine(destFolder, name);
                     // 复制文件
                     File.Copy(file, dest);
                 }
                 //得到原文件根目录下的所有文件夹
                 string[] folders = Directory.GetDirectories(sourceFolder);
-                foreach (var folder in folders) {
-                    var dirName = folder.Split('\\')[folder.Split('\\').Length - 1];
-                    var destfolder = Path.Combine(destFolder, dirName);
+                foreach (string folder in folders) {
+                    string dirName = folder.Split('\\')[folder.Split('\\').Length - 1];
+                    string destfolder = Path.Combine(destFolder, dirName);
                     // 递归调用
                     CopyFolder(folder, destfolder);
                 }
