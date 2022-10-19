@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WarThunderSlotsSavior {
     class AppConfig {
-        public static string savingPath {
+        public static string SavingPath {
             get {
                 string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) 
                     + "\\My Games\\WarThunder\\Saves";
@@ -14,11 +14,22 @@ namespace WarThunderSlotsSavior {
             }
         }
 
-        public static string backupPath {
+        public static string BackupPath {
             get {
-                string path = savingPath + ".backup";
+                string path = SavingPath + ".backup";
                 return path;
             }
+        }
+
+        public static string PathIn(string rootPath, string accountID = "", WTSetting.Type? setting = null) {
+            string path = rootPath;
+            path += accountID == "" ? "" : ("\\" + accountID);
+            path += setting is null ? "" : ("\\production\\" + setting.ToString() + ".blk");
+            return path;
+        }
+
+        public static string GlobalPathIn(string rootPath, string accountID = "") {
+            return PathIn(rootPath, accountID, WTSetting.Type.global);
         }
     }
 }

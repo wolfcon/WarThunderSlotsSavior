@@ -9,41 +9,41 @@ using System.Windows;
 namespace WarThunderSlotsSavior {
     class FileUtility {
         /// <summary>
-        /// 复制文件夹及文件
+        /// Copy files and subfolders
         /// </summary>
-        /// <param name="sourceFolder">原文件路径</param>
-        /// <param name="destFolder">目标文件路径</param>
+        /// <param name="sourceFolder">Source folder path</param>
+        /// <param name="destFolder">Destination folder path</param>
         /// <returns></returns>
-        public static bool CopyFolder(string sourceFolder, string destFolder) {
+        public static bool CopyFolder(string sourcePath, string destPath) {
             try {
-                //如果目标路径不存在,则创建目标路径
-                if (!Directory.Exists(destFolder)) {
-                    Directory.CreateDirectory(destFolder);
+                // If destination folder dose not exist, create folder.
+                if (!Directory.Exists(destPath)) {
+                    Directory.CreateDirectory(destPath);
                 } else {
-                    DirectoryInfo dirInfo = new DirectoryInfo(destFolder);
+                    DirectoryInfo dirInfo = new DirectoryInfo(destPath);
                     try {
                         dirInfo.Delete(true);
-                        Directory.CreateDirectory(destFolder);
+                        Directory.CreateDirectory(destPath);
                     } catch (Exception ex) {
                         MessageBox.Show(ex.Message);
                         return false;
                     }
                 }
-                //得到原文件根目录下的所有文件
-                string[] files = Directory.GetFiles(sourceFolder);
+                // Get all files in root folder.
+                string[] files = Directory.GetFiles(sourcePath);
                 foreach (string file in files) {
                     string name = Path.GetFileName(file);
-                    string dest = Path.Combine(destFolder, name);
-                    // 复制文件
+                    string dest = Path.Combine(destPath, name);
+                    // copy file to destination
                     File.Copy(file, dest);
                 }
-                //得到原文件根目录下的所有文件夹
-                string[] folders = Directory.GetDirectories(sourceFolder);
+                // Get sub folders in root folder.
+                string[] folders = Directory.GetDirectories(sourcePath);
                 foreach (string folder in folders) {
                     string dirName = folder.Split('\\')[folder.Split('\\').Length - 1];
-                    string destfolder = Path.Combine(destFolder, dirName);
-                    // 递归调用
-                    CopyFolder(folder, destfolder);
+                    string dest = Path.Combine(destPath, dirName);
+                    // Call recursively
+                    CopyFolder(folder, dest);
                 }
             } catch (Exception ex) {
                 MessageBox.Show(ex.Message);

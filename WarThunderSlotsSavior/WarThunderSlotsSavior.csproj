@@ -13,9 +13,10 @@ QQ: 472730949
 github: https://github.com/wolfcon</Description>
     <PackageProjectUrl>https://github.com/wolfcon/WarThunderSlotsSavior</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <SignAssembly>false</SignAssembly>
     <Copyright>https://github.com/wolfcon</Copyright>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,5 +26,9 @@ github: https://github.com/wolfcon</Description>
   <ItemGroup>
     <Resource Include="Logo\icon.ico" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="cd $(OutDir)&#xD;&#xA;tar -cavf $(TargetName).zip $(TargetName).exe $(TargetName).dll $(TargetName).runtimeconfig.json&#xD;&#xA;move $(TargetName).zip ../" />
+  </Target>
 
 </Project>

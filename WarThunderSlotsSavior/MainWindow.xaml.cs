@@ -29,7 +29,7 @@ namespace WarThunderSlotsSavior {
         }
 
         public void refreshBackupStatus() {
-            string dateString = WTSetting.lastBackupDateString();
+            string dateString = WTSetting.LastBackupDateString();
             bool hasBackup = dateString != null;
             restoreButton.IsEnabled = hasBackup;
             lastBackupDateLabel.Content = hasBackup ? "Last: " + dateString : "No backup";
@@ -44,12 +44,12 @@ namespace WarThunderSlotsSavior {
         }
 
         private void backupButton_Click(object sender, RoutedEventArgs e) {
-            WTSetting.backup();
+            WTSetting.Backup();
             refreshBackupStatus();
         }
 
         private void restoreButton_Click(object sender, RoutedEventArgs e) {
-            WTSetting.restore();
+            WTSetting.Restore();
         }
 
         private void infoButton_Click(object sender, RoutedEventArgs e) {
