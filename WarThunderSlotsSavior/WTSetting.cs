@@ -51,10 +51,10 @@ namespace WarThunderSlotsSavior {
             string[] accounts = GetAllSavedAccounts();
             foreach (string account in accounts) {
                 string globalVersion = WTSetting.Version(AppConfig.GlobalPathIn(AppConfig.SavingPath, account));
-                ReplaceVersion(globalVersion, account, Type.global);
+                ReplaceVersion(BoostVersion(globalVersion), account, Type.global);
 
                 string machineVersion = WTSetting.Version(AppConfig.PathIn(AppConfig.SavingPath, account, Type.machine));
-                ReplaceVersion(machineVersion, account, Type.machine);
+                ReplaceVersion(BoostVersion(machineVersion), account, Type.machine);
 
                 string storageVersion = WTSetting.Version(AppConfig.PathIn(AppConfig.SavingPath, account, Type.storage));
                 ReplaceVersion(storageVersion, account, Type.storage);
@@ -114,6 +114,14 @@ namespace WarThunderSlotsSavior {
             }
 
             return version;
+        }
+
+        private static string BoostVersion(string version) {
+            try {
+                return (Convert.ToInt64(version) + 1).ToString();
+            } catch {
+                return version;
+            }
         }
         /// <summary>
         /// Replace file setting version. If saving root is null, backup path will be the default value.
