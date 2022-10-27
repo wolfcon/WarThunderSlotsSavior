@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace WarThunderSlotsSavior {
     class AppConfig {
@@ -30,6 +31,20 @@ namespace WarThunderSlotsSavior {
 
         public static string GlobalPathIn(string rootPath, string accountID = "") {
             return PathIn(rootPath, accountID, WTSetting.Type.global);
+        }
+
+        public static void CheckSystemLanguage(string defaultLang = "en") {
+            string systemLang = System.Threading.Thread.CurrentThread.CurrentCulture.Name;
+            string lang = systemLang.Contains("zh") ? "zh" : defaultLang;
+
+            List<ResourceDictionary> dictList = new List<ResourceDictionary>();
+            foreach (ResourceDictionary dict in App.Current.Resources.MergedDictionaries) {
+                dictList.Add(dict);
+            }
+            string langCulture = "Resources\\Lang\\" + lang + ".xaml";
+            ResourceDictionary resourceDict = dictList.FirstOrDefault(d => d.Source.OriginalString == langCulture);
+            Application.Current.Resources.MergedDictionaries.Remove(resourceDict);
+            Application.Current.Resources.MergedDictionaries.Add(resourceDict);
         }
     }
 }

@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib">
+    <s:String x:Key="noBackupMessage">🎃You have no backup at all!!!🎃</s:String>
+    <s:String x:Key="restoreSuccessMessage">🎉Your slot preset has been RESTORED!🎉</s:String>
+    <s:String x:Key="backupSuccessMessage">🎉Your slot preset has been backed up!🎉</s:String>
+    <s:String x:Key="versionModificationFailedMessage">😈Version modificaiton failed!😈</s:String>
+    <s:String x:Key="lastCaption">Last:</s:String>
+    <s:String x:Key="backupButton">🎯Backup🎯</s:String>
+    <s:String x:Key="restoreButton">🎈Restore🎈</s:String>
+</ResourceDictionary>

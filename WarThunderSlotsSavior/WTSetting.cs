@@ -30,7 +30,7 @@ namespace WarThunderSlotsSavior {
         public static void Backup() {
             bool result = FileUtility.CopyFolder(AppConfig.SavingPath, AppConfig.BackupPath);
             if (result) {
-                MessageBox.Show("🎉Your slot preset has been backed up!🎉");
+                MessageBox.Show(App.Current.Resources["backupSuccessMessage"] as string);
             }
         }
 
@@ -38,12 +38,12 @@ namespace WarThunderSlotsSavior {
             ResetBackupVersions();
 
             if (!Directory.Exists(AppConfig.BackupPath)) {
-                MessageBox.Show("🎃You have no backup at all!!!🎃");
+                MessageBox.Show(App.Current.Resources["noBackupMessage"] as string);
                 return;
             }
             bool result = FileUtility.CopyFolder(AppConfig.BackupPath, AppConfig.SavingPath);
             if (result) {
-                MessageBox.Show("🎉Your slot preset has been RESTORED!🎉");
+                MessageBox.Show(App.Current.Resources["restoreSuccessMessage"] as string);
             }
         }
 
@@ -100,7 +100,7 @@ namespace WarThunderSlotsSavior {
             try {
                 File.WriteAllText(path, text);
             } catch {
-                MessageBox.Show("😈Version modificaiton failed!😈");
+                MessageBox.Show(App.Current.Resources["versionModificationFailedMessage"] as string);
             }
         }
 

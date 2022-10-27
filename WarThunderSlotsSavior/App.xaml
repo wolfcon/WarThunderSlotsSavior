@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:WarThunderSlotsSavior"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\Lang\en.xaml"/>
+                <ResourceDictionary Source="Resources\Lang\zh.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

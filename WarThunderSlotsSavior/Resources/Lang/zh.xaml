@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib">
+    <s:String x:Key="noBackupMessage">🎃你没有备份过! 你不要骗我!!!🎃</s:String>
+    <s:String x:Key="restoreSuccessMessage">🎉你的成员组已经成功还原啦!🎉</s:String>
+    <s:String x:Key="backupSuccessMessage">🎉你的成员组已经备份完成!🎉</s:String>
+    <s:String x:Key="versionModificationFailedMessage">😈版本号检测失败!😈</s:String>
+    <s:String x:Key="lastCaption">最近:</s:String>
+    <s:String x:Key="backupButton">🎯备份🎯</s:String>
+    <s:String x:Key="restoreButton">🎈还原🎈</s:String>
+</ResourceDictionary>

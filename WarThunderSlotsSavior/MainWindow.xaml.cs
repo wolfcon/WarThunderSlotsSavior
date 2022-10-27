@@ -32,7 +32,7 @@ namespace WarThunderSlotsSavior {
             string dateString = WTSetting.LastBackupDateString();
             bool hasBackup = dateString != null;
             restoreButton.IsEnabled = hasBackup;
-            lastBackupDateLabel.Content = hasBackup ? "Last: " + dateString : "No backup";
+            lastBackupDateLabel.Content = hasBackup ? App.Current.Resources["lastCaption"] + " " + dateString : App.Current.Resources["noBackupStatus"];
         }
 
 

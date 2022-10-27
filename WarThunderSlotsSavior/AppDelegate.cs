@@ -32,10 +32,10 @@ namespace WarThunderSlotsSavior {
             App app = new WarThunderSlotsSavior.App();
             app.InitializeComponent();
 
+            AppConfig.CheckSystemLanguage();
             MainWindow mainWindow = new MainWindow();
             app.MainWindow = mainWindow;
             app.Run();
-            App.Main();
         }
     }
 }
