@@ -5,11 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WarThunderSlotsSavior"
         mc:Ignorable="d"
-        Title="War Thunder Slots Preset Savior" Height="350" Width="300" ResizeMode="NoResize">
-    <Grid Margin="0,0,0,0">
-        <Button x:Name="backupButton" Content="{DynamicResource backupButton}" HorizontalAlignment="Center" Margin="12,36,12,0" VerticalAlignment="Top" Height="92" Width="252" Click="backupButton_Click" FontSize="24" Grid.ColumnSpan="3"/>
-        <Button x:Name="restoreButton" Content="{DynamicResource restoreButton}" HorizontalAlignment="Center" Margin="12,169,12,0" VerticalAlignment="Top" Height="92" Width="252" Click="restoreButton_Click" FontSize="24" Grid.ColumnSpan="3"/>
-        <Label x:Name="lastBackupDateLabel" Content="" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="252" HorizontalContentAlignment="Center" FontSize="18" Margin="4,0,4,4" Foreground="#FF097435" Height="40" Grid.ColumnSpan="3"/>
-        <Button Content="😛" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="23" Click="infoButton_Click" Grid.Column="2"/>
+        Title="War Thunder Slots Preset Savior" Height="350" Width="313" ResizeMode="NoResize">
+    <Grid Margin="12,0,12,12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28*"/>
+            <RowDefinition Height="120*"/>
+            <RowDefinition Height="120*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <DockPanel>
+            <Button Content="🔍" Width="20" Height="20" Click="showExplorer_Click" Foreground="#FF097435"/>
+            <Button Content="😛" HorizontalAlignment="Right" Click="infoButton_Click" Width="20" Height="20"/>
+        </DockPanel>
+        <Button x:Name="backupButton" Content="{DynamicResource backupButton}" Click="backupButton_Click" FontSize="24" Grid.Row="1"/>
+        <Button x:Name="restoreButton" Content="{DynamicResource restoreButton}" Click="restoreButton_Click" FontSize="24" Grid.Row="2"/>
+        <Label x:Name="lastBackupDateLabel" Content="" HorizontalContentAlignment="Center" FontSize="18" Foreground="#FF097435" Grid.Row="3"/>
+
     </Grid>
 </Window>

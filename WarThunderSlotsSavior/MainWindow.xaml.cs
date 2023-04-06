@@ -43,6 +43,10 @@ namespace WarThunderSlotsSavior {
             DragMove();
         }
 
+        private void showExplorer_Click(object sender, RoutedEventArgs e) {
+            System.Diagnostics.Process.Start("Explorer", AppConfig.SavingPath);
+        }
+
         private void backupButton_Click(object sender, RoutedEventArgs e) {
             WTSetting.Backup();
             refreshBackupStatus();
