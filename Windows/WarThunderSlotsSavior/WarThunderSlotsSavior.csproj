@@ -17,15 +17,8 @@ github: https://github.com/wolfcon</Description>
     <SignAssembly>false</SignAssembly>
     <Copyright>https://github.com/wolfcon</Copyright>
     <Version>1.1.0</Version>
+    <UseWindowsForms>True</UseWindowsForms>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Logo\icon.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Logo\icon.ico" />
-  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
@@ -48,6 +41,9 @@ github: https://github.com/wolfcon</Description>
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Logo\icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

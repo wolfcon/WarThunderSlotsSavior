@@ -4,7 +4,7 @@ public class Git {
     /// <summary>
     /// 获取环境git.ext的环境变量路径
     /// </summary>
-    private static string strEnvironmentVariable {
+    private static string StrEnvironmentVariable {
         get {
             string strPath = System.Environment.GetEnvironmentVariable("Path");
             if (string.IsNullOrEmpty(strPath)) {
@@ -29,25 +29,27 @@ public class Git {
     /// <summary>
     /// 执行git指令
     /// </summary>
-    public static void ExecuteGitCommand(string strCommnad, DataReceivedEventHandler call) {
-        string strGitPath = System.IO.Path.Combine(strEnvironmentVariable, "git.exe");
+    public static int ExecuteGitCommand(string strCommnad, DataReceivedEventHandler call) {
+        string strGitPath = System.IO.Path.Combine(StrEnvironmentVariable, "git.exe");
         if (string.IsNullOrEmpty(strGitPath)) {
             //">>>>>strEnvironmentVariable: enviromentVariable is not config!!!!"
-            return;
+            return -1;
         }
-        Process p = new Process();
-        p.StartInfo.FileName = strGitPath;
-        p.StartInfo.Arguments = strCommnad;
-        p.StartInfo.CreateNoWindow = true;
-        p.StartInfo.UseShellExecute = false;
-        p.StartInfo.RedirectStandardOutput = true;
-        p.StartInfo.WorkingDirectory = strWorkingDir;
-        p.OutputDataReceived += call;
-        p.OutputDataReceived -= OnOutputDataReceived;
-        p.OutputDataReceived += OnOutputDataReceived;
-        p.Start();
-        p.BeginOutputReadLine();
-        p.WaitForExit();
+        Process process = new Process();
+        process.StartInfo.FileName = strGitPath;
+        process.StartInfo.Arguments = strCommnad;
+        process.StartInfo.CreateNoWindow = true;
+        process.StartInfo.UseShellExecute = false;
+        process.StartInfo.RedirectStandardOutput = true;
+        process.StartInfo.WorkingDirectory = strWorkingDir;
+        process.OutputDataReceived += call;
+        process.OutputDataReceived -= OnOutputDataReceived;
+        process.OutputDataReceived += OnOutputDataReceived;
+        process.Start();
+        process.BeginOutputReadLine();
+        process.WaitForExit();
+
+        return process.ExitCode;
     }
     /// <summary>
     /// 输出git指令执行结果
