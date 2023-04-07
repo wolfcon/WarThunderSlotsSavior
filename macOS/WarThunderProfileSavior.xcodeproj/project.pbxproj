@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0144AE2429DD4AC5006D7720 /* AppActivityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0144AE2329DD4AC5006D7720 /* AppActivityMonitor.swift */; };
+		016B64A329C9A0B300BD3CEE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B64A229C9A0B300BD3CEE /* NotificationController.swift */; };
+		017DBA0E29CAA21F004B08C3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017DBA0D29CAA21F004B08C3 /* main.swift */; };
+		017DBA1029CAA43A004B08C3 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017DBA0F29CAA43A004B08C3 /* ProfileController.swift */; };
+		01B4CDB829C2EA7E008BBF47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4CDB729C2EA7E008BBF47 /* AppDelegate.swift */; };
+		01B4CDBA29C2EA7E008BBF47 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4CDB929C2EA7E008BBF47 /* SettingViewController.swift */; };
+		01B4CDBC29C2EA80008BBF47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B4CDBB29C2EA80008BBF47 /* Assets.xcassets */; };
+		01B4CDBF29C2EA80008BBF47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B4CDBD29C2EA80008BBF47 /* Main.storyboard */; };
+		01B4CDCA29C2EA80008BBF47 /* WarThunderProfileSaviorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4CDC929C2EA80008BBF47 /* WarThunderProfileSaviorTests.swift */; };
+		01B4CDD429C2EA80008BBF47 /* WarThunderProfileSaviorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4CDD329C2EA80008BBF47 /* WarThunderProfileSaviorUITests.swift */; };
+		01B4CDD629C2EA80008BBF47 /* WarThunderProfileSaviorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4CDD529C2EA80008BBF47 /* WarThunderProfileSaviorUITestsLaunchTests.swift */; };
+		01C182D629C837AA00EF47F7 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C182D529C837AA00EF47F7 /* Git.swift */; };
+		01D32C0D29CC4F4600A623C2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 01D32C0C29CC4F4600A623C2 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01B4CDC629C2EA80008BBF47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01B4CDAC29C2EA7E008BBF47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B4CDB329C2EA7E008BBF47;
+			remoteInfo = WarThunderProfileSavior;
+		};
+		01B4CDD029C2EA80008BBF47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01B4CDAC29C2EA7E008BBF47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B4CDB329C2EA7E008BBF47;
+			remoteInfo = WarThunderProfileSavior;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0144AE2329DD4AC5006D7720 /* AppActivityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppActivityMonitor.swift; sourceTree = "<group>"; };
+		016B64A229C9A0B300BD3CEE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		017DB9A829C9BC45004B08C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		017DBA0D29CAA21F004B08C3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		017DBA0F29CAA43A004B08C3 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		01B4CDB429C2EA7E008BBF47 /* WarThunderProfileSavior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarThunderProfileSavior.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B4CDB729C2EA7E008BBF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01B4CDB929C2EA7E008BBF47 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		01B4CDBB29C2EA80008BBF47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01B4CDBE29C2EA80008BBF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01B4CDC029C2EA80008BBF47 /* WarThunderProfileSavior.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WarThunderProfileSavior.entitlements; sourceTree = "<group>"; };
+		01B4CDC529C2EA80008BBF47 /* WarThunderProfileSaviorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarThunderProfileSaviorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B4CDC929C2EA80008BBF47 /* WarThunderProfileSaviorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarThunderProfileSaviorTests.swift; sourceTree = "<group>"; };
+		01B4CDCF29C2EA80008BBF47 /* WarThunderProfileSaviorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarThunderProfileSaviorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B4CDD329C2EA80008BBF47 /* WarThunderProfileSaviorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarThunderProfileSaviorUITests.swift; sourceTree = "<group>"; };
+		01B4CDD529C2EA80008BBF47 /* WarThunderProfileSaviorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarThunderProfileSaviorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01C182D529C837AA00EF47F7 /* Git.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
+		01D32C0C29CC4F4600A623C2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01B4CDB129C2EA7E008BBF47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B4CDC229C2EA80008BBF47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B4CDCC29C2EA80008BBF47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B4CDAB29C2EA7E008BBF47 = {
+			isa = PBXGroup;
+			children = (
+				01B4CDB629C2EA7E008BBF47 /* WarThunderProfileSavior */,
+				01B4CDC829C2EA80008BBF47 /* WarThunderProfileSaviorTests */,
+				01B4CDD229C2EA80008BBF47 /* WarThunderProfileSaviorUITests */,
+				01B4CDB529C2EA7E008BBF47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01B4CDB529C2EA7E008BBF47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01B4CDB429C2EA7E008BBF47 /* WarThunderProfileSavior.app */,
+				01B4CDC529C2EA80008BBF47 /* WarThunderProfileSaviorTests.xctest */,
+				01B4CDCF29C2EA80008BBF47 /* WarThunderProfileSaviorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01B4CDB629C2EA7E008BBF47 /* WarThunderProfileSavior */ = {
+			isa = PBXGroup;
+			children = (
+				01B4CDB729C2EA7E008BBF47 /* AppDelegate.swift */,
+				017DBA0F29CAA43A004B08C3 /* ProfileController.swift */,
+				0144AE2329DD4AC5006D7720 /* AppActivityMonitor.swift */,
+				016B64A229C9A0B300BD3CEE /* NotificationController.swift */,
+				01B4CDB929C2EA7E008BBF47 /* SettingViewController.swift */,
+				01C182D529C837AA00EF47F7 /* Git.swift */,
+				01B4CDBB29C2EA80008BBF47 /* Assets.xcassets */,
+				01B4CDBD29C2EA80008BBF47 /* Main.storyboard */,
+				017DBA0D29CAA21F004B08C3 /* main.swift */,
+				017DB9A829C9BC45004B08C3 /* Info.plist */,
+				01D32C0B29CC4F2F00A623C2 /* Resources */,
+				01B4CDC029C2EA80008BBF47 /* WarThunderProfileSavior.entitlements */,
+			);
+			path = WarThunderProfileSavior;
+			sourceTree = "<group>";
+		};
+		01B4CDC829C2EA80008BBF47 /* WarThunderProfileSaviorTests */ = {
+			isa = PBXGroup;
+			children = (
+				01B4CDC929C2EA80008BBF47 /* WarThunderProfileSaviorTests.swift */,
+			);
+			path = WarThunderProfileSaviorTests;
+			sourceTree = "<group>";
+		};
+		01B4CDD229C2EA80008BBF47 /* WarThunderProfileSaviorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01B4CDD329C2EA80008BBF47 /* WarThunderProfileSaviorUITests.swift */,
+				01B4CDD529C2EA80008BBF47 /* WarThunderProfileSaviorUITestsLaunchTests.swift */,
+			);
+			path = WarThunderProfileSaviorUITests;
+			sourceTree = "<group>";
+		};
+		01D32C0B29CC4F2F00A623C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01D32C0C29CC4F4600A623C2 /* .gitignore */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01B4CDB329C2EA7E008BBF47 /* WarThunderProfileSavior */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B4CDD929C2EA80008BBF47 /* Build configuration list for PBXNativeTarget "WarThunderProfileSavior" */;
+			buildPhases = (
+				01B4CDB029C2EA7E008BBF47 /* Sources */,
+				01B4CDB129C2EA7E008BBF47 /* Frameworks */,
+				01B4CDB229C2EA7E008BBF47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WarThunderProfileSavior;
+			productName = WarThunderProfileSavior;
+			productReference = 01B4CDB429C2EA7E008BBF47 /* WarThunderProfileSavior.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01B4CDC429C2EA80008BBF47 /* WarThunderProfileSaviorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B4CDDC29C2EA80008BBF47 /* Build configuration list for PBXNativeTarget "WarThunderProfileSaviorTests" */;
+			buildPhases = (
+				01B4CDC129C2EA80008BBF47 /* Sources */,
+				01B4CDC229C2EA80008BBF47 /* Frameworks */,
+				01B4CDC329C2EA80008BBF47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01B4CDC729C2EA80008BBF47 /* PBXTargetDependency */,
+			);
+			name = WarThunderProfileSaviorTests;
+			productName = WarThunderProfileSaviorTests;
+			productReference = 01B4CDC529C2EA80008BBF47 /* WarThunderProfileSaviorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01B4CDCE29C2EA80008BBF47 /* WarThunderProfileSaviorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B4CDDF29C2EA80008BBF47 /* Build configuration list for PBXNativeTarget "WarThunderProfileSaviorUITests" */;
+			buildPhases = (
+				01B4CDCB29C2EA80008BBF47 /* Sources */,
+				01B4CDCC29C2EA80008BBF47 /* Frameworks */,
+				01B4CDCD29C2EA80008BBF47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01B4CDD129C2EA80008BBF47 /* PBXTargetDependency */,
+			);
+			name = WarThunderProfileSaviorUITests;
+			productName = WarThunderProfileSaviorUITests;
+			productReference = 01B4CDCF29C2EA80008BBF47 /* WarThunderProfileSaviorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01B4CDAC29C2EA7E008BBF47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					01B4CDB329C2EA7E008BBF47 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					01B4CDC429C2EA80008BBF47 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 01B4CDB329C2EA7E008BBF47;
+					};
+					01B4CDCE29C2EA80008BBF47 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 01B4CDB329C2EA7E008BBF47;
+					};
+				};
+			};
+			buildConfigurationList = 01B4CDAF29C2EA7E008BBF47 /* Build configuration list for PBXProject "WarThunderProfileSavior" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01B4CDAB29C2EA7E008BBF47;
+			productRefGroup = 01B4CDAB29C2EA7E008BBF47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01B4CDB329C2EA7E008BBF47 /* WarThunderProfileSavior */,
+				01B4CDC429C2EA80008BBF47 /* WarThunderProfileSaviorTests */,
+				01B4CDCE29C2EA80008BBF47 /* WarThunderProfileSaviorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01B4CDB229C2EA7E008BBF47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B4CDBC29C2EA80008BBF47 /* Assets.xcassets in Resources */,
+				01D32C0D29CC4F4600A623C2 /* .gitignore in Resources */,
+				01B4CDBF29C2EA80008BBF47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B4CDC329C2EA80008BBF47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B4CDCD29C2EA80008BBF47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01B4CDB029C2EA7E008BBF47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0144AE2429DD4AC5006D7720 /* AppActivityMonitor.swift in Sources */,
+				01B4CDBA29C2EA7E008BBF47 /* SettingViewController.swift in Sources */,
+				017DBA1029CAA43A004B08C3 /* ProfileController.swift in Sources */,
+				017DBA0E29CAA21F004B08C3 /* main.swift in Sources */,
+				01B4CDB829C2EA7E008BBF47 /* AppDelegate.swift in Sources */,
+				016B64A329C9A0B300BD3CEE /* NotificationController.swift in Sources */,
+				01C182D629C837AA00EF47F7 /* Git.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B4CDC129C2EA80008BBF47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B4CDCA29C2EA80008BBF47 /* WarThunderProfileSaviorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B4CDCB29C2EA80008BBF47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B4CDD629C2EA80008BBF47 /* WarThunderProfileSaviorUITestsLaunchTests.swift in Sources */,
+				01B4CDD429C2EA80008BBF47 /* WarThunderProfileSaviorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01B4CDC729C2EA80008BBF47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B4CDB329C2EA7E008BBF47 /* WarThunderProfileSavior */;
+			targetProxy = 01B4CDC629C2EA80008BBF47 /* PBXContainerItemProxy */;
+		};
+		01B4CDD129C2EA80008BBF47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B4CDB329C2EA7E008BBF47 /* WarThunderProfileSavior */;
+			targetProxy = 01B4CDD029C2EA80008BBF47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01B4CDBD29C2EA80008BBF47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01B4CDBE29C2EA80008BBF47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01B4CDD729C2EA80008BBF47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01B4CDD829C2EA80008BBF47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		01B4CDDA29C2EA80008BBF47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WarThunderProfileSavior/WarThunderProfileSavior.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WarThunderProfileSavior/Info.plist;
+				INFOPLIST_KEY_LSBackgroundOnly = NO;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wolfcon.WarThunderProfileSavior;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		01B4CDDB29C2EA80008BBF47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WarThunderProfileSavior/WarThunderProfileSavior.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WarThunderProfileSavior/Info.plist;
+				INFOPLIST_KEY_LSBackgroundOnly = NO;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wolfcon.WarThunderProfileSavior;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		01B4CDDD29C2EA80008BBF47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wolfcon.WarThunderProfileSaviorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WarThunderProfileSavior.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WarThunderProfileSavior";
+			};
+			name = Debug;
+		};
+		01B4CDDE29C2EA80008BBF47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wolfcon.WarThunderProfileSaviorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WarThunderProfileSavior.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WarThunderProfileSavior";
+			};
+			name = Release;
+		};
+		01B4CDE029C2EA80008BBF47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wolfcon.WarThunderProfileSaviorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WarThunderProfileSavior;
+			};
+			name = Debug;
+		};
+		01B4CDE129C2EA80008BBF47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wolfcon.WarThunderProfileSaviorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WarThunderProfileSavior;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01B4CDAF29C2EA7E008BBF47 /* Build configuration list for PBXProject "WarThunderProfileSavior" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B4CDD729C2EA80008BBF47 /* Debug */,
+				01B4CDD829C2EA80008BBF47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B4CDD929C2EA80008BBF47 /* Build configuration list for PBXNativeTarget "WarThunderProfileSavior" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B4CDDA29C2EA80008BBF47 /* Debug */,
+				01B4CDDB29C2EA80008BBF47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B4CDDC29C2EA80008BBF47 /* Build configuration list for PBXNativeTarget "WarThunderProfileSaviorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B4CDDD29C2EA80008BBF47 /* Debug */,
+				01B4CDDE29C2EA80008BBF47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B4CDDF29C2EA80008BBF47 /* Build configuration list for PBXNativeTarget "WarThunderProfileSaviorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B4CDE029C2EA80008BBF47 /* Debug */,
+				01B4CDE129C2EA80008BBF47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01B4CDAC29C2EA7E008BBF47 /* Project object */;
+}
