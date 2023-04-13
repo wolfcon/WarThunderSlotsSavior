@@ -21,6 +21,14 @@ github: https://github.com/wolfcon</Description>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Logo\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Logo\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -41,9 +49,6 @@ github: https://github.com/wolfcon</Description>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Logo\icon.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
